@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Todo } from './types';
 import { AddTodoForm, TodoList } from './components';
 import { addTodoToList, toggleTodoCompletion, deleteTodoById } from './utils/todoUtils';
@@ -19,9 +19,9 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
-        <h1 className="text-2xl font-bold text-gray-800 text-center mb-6">
+    <div className="app-container">
+      <div className="app-card">
+        <h1 className="app-title">
           Todo App
         </h1>
         
